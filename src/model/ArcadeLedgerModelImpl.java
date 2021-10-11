@@ -29,7 +29,8 @@ public class ArcadeLedgerModelImpl implements LedgerModel {
 
     // adding to transaction list
     this.transactions.append("You bought ").append(number).append(" tokens for ")
-        .append(this.tokenPrice).append("$ each \n");
+        .append(this.tokenPrice).append("$ each ").append("with description ").append(description)
+        .append("\n");
   }
 
   @Override
